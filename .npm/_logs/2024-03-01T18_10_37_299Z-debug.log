@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--ignore-scripts',
+1 verbose cli   '@types/react@ts3.6',
+1 verbose cli   '@types/react-dom@ts3.6',
+1 verbose cli   '@types/eslint-config-prettier@ts3.6',
+1 verbose cli   '@types/eslint-plugin-prettier@ts3.6',
+1 verbose cli   '@types/lint-staged@ts3.6',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--user-agent=typesInstaller/3.6.3'
+1 verbose cli ]
+2 info using npm@6.14.6
+3 info using node@v12.18.3
+4 verbose npm-session a99d6af0e8a363bd
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/@types%2feslint-config-prettier 35ms (from cache)
+8 http fetch GET 200 https://registry.npmjs.org/@types%2feslint-plugin-prettier 37ms (from cache)
+9 http fetch GET 200 https://registry.npmjs.org/@types%2freact-dom 40ms (from cache)
+10 http fetch GET 200 https://registry.npmjs.org/@types%2freact 43ms (from cache)
+11 silly pacote tag manifest for @types/eslint-config-prettier@ts3.6 fetched in 47ms
+12 silly pacote tag manifest for @types/eslint-plugin-prettier@ts3.6 fetched in 47ms
+13 silly pacote tag manifest for @types/react-dom@ts3.6 fetched in 48ms
+14 silly pacote tag manifest for @types/react@ts3.6 fetched in 54ms
+15 http fetch GET 200 https://registry.npmjs.org/@types%2flint-staged 231ms
+16 silly fetchPackageMetaData error for @types/lint-staged@ts3.6 No matching version found for @types/lint-staged@ts3.6.
+17 timing stage:rollbackFailedOptional Completed in 0ms
+18 timing stage:runTopLevelLifecycles Completed in 290ms
+19 verbose type tag
+20 verbose stack @types/lint-staged: No matching version found for @types/lint-staged@ts3.6.
+20 verbose stack     at pickManifest (/usr/local/lib/node_modules/npm/node_modules/npm-pick-manifest/index.js:122:13)
+20 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/pacote/lib/fetchers/registry/manifest.js:24:14
+20 verbose stack     at tryCatcher (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/util.js:16:23)
+20 verbose stack     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:517:31)
+20 verbose stack     at Promise._settlePromise (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:574:18)
+20 verbose stack     at Promise._settlePromise0 (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:619:10)
+20 verbose stack     at Promise._settlePromises (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/promise.js:699:18)
+20 verbose stack     at _drainQueueStep (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:138:12)
+20 verbose stack     at _drainQueue (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:131:9)
+20 verbose stack     at Async._drainQueues (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:147:5)
+20 verbose stack     at Immediate.Async.drainQueues [as _onImmediate] (/usr/local/lib/node_modules/npm/node_modules/bluebird/js/release/async.js:17:14)
+20 verbose stack     at processImmediate (internal/timers.js:456:21)
+21 verbose cwd /home/theia/.cache/typescript/3.6
+22 verbose Linux 5.15.133.1-microsoft-standard-WSL2
+23 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--ignore-scripts" "@types/react@ts3.6" "@types/react-dom@ts3.6" "@types/eslint-config-prettier@ts3.6" "@types/eslint-plugin-prettier@ts3.6" "@types/lint-staged@ts3.6" "--save-dev" "--user-agent=typesInstaller/3.6.3"
+24 verbose node v12.18.3
+25 verbose npm  v6.14.6
+26 error code ETARGET
+27 error notarget No matching version found for @types/lint-staged@ts3.6.
+28 error notarget In most cases you or one of your dependencies are requesting
+28 error notarget a package version that doesn't exist.
+29 verbose exit [ 1, true ]
